@@ -1,0 +1,108 @@
+/* I */
+i {
+    font-size: 30px;
+}
+
+i:hover {
+    color: rgb(15, 157, 34);
+}
+
+
+
+
+/* CUERPO */
+body {
+    background-color: #fff;
+}
+
+
+
+/* PIÉ DE PÁGINA */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    border-style: solid;
+    width: 100%;
+
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+
+
+
+/* CABEZA */
+.Head {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    background-color: #333;
+}
+
+
+
+/* ID DEL BOTÓN */
+#ShowNavBar {
+    position: absolute;
+    right: 20px;
+    margin-right: 20px;
+
+    background-color: #33333300;
+    border: none;
+
+    width: 60px;
+    height: 35px;
+}
+
+
+
+/* BARRA DE NAVEGACIÓN */
+.NavBar {
+    display: flexbox;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--acent-color);
+}
+
+.NavBar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+.NavBar nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* IMÁGEN PROVISIONAL */
+.LandscapePhotoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.LandscapePhotoContainer img {
+    display: flex;
+    width: 100%;
+
+}

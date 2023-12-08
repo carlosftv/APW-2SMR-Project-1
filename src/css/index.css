@@ -1,0 +1,51 @@
+/* I */
+i {
+    font-size: 30px;
+}
+
+i:hover {
+    color: rgb(15, 157, 34);
+}
+
+
+
+
+/* CUERPO */
+body {
+    background-color: #fff;
+}
+
+
+
+/* PIÉ DE PÁGINA */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    border-style: solid;
+    width: 100%;
+
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+
+
+
+
+/* IMÁGEN PROVISIONAL */
+.LandscapePhotoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.LandscapePhotoContainer img {
+    display: flex;
+    width: 100%;
+
+}

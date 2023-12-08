@@ -1,0 +1,44 @@
+{
+  "python.analysis.extraPaths": [],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Electron",
+  "editor.fontSize": 16.5,
+  "editor.minimap.enabled": false,
+  "indentRainbow.colors": [
+    "rgba(25, 74, 122,0.2)",
+    "rgba(71, 111, 149,0.2)",
+    "rgba(117, 147, 175,0.2)",
+    "rgba(163, 183, 202,0.2)"
+  ],
+
+  "editor.wordWrap": "off",
+  "workbench.sideBar.location": "right",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.formatOnSave": true,
+  "editor.guides.indentation": false,
+  "indenticator.width": 0.1,
+  "indenticator.color.dark": "rgba(255,255,255,0.1)",
+  "editor.matchBrackets": "never",
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
+  "workbench.statusBar.visible": false,
+
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "smoothtype.duration": 80,
+  "smoothtype.autoReload": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.fontFamily": "monospace",
+  "window.zoomLevel": 0.5,
+  "workbench.activityBar.location": "hidden",
+  "liveServer.settings.port": 5502
+}
