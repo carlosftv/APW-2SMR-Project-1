@@ -1,0 +1,113 @@
+* {
+    --acent-color: rgb(121, 58, 58);
+    --main-color: rgb(49, 49, 49);
+
+}
+
+
+
+.MainContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.GridsContainer {
+    background-color: #242424;
+    /* Color de fondo del div */
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.Grid {
+    box-shadow: 0px 0px 10px 2px black;
+
+    display: grid;
+    grid-template-areas:
+        'whoami whoami whoami photo'
+        'about about about about'
+
+        'ilike ilike others others'
+        'ilike ilike others others'
+
+        'projects projects projects projects'
+        'projects projects projects projects'
+    ;
+    border-radius: 5px;
+
+}
+
+
+
+.Grid div {
+    /*border: dotted 2px rgba(120, 120, 120, 0.342);*/
+    margin: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--main-color);
+    transition: 0.3s;
+}
+
+.Grid div:hover {
+    background-color: rgba(158, 158, 158, 0.657);
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.ilike {
+    grid-area: ilike;
+}
+
+.whoami {
+    grid-area: whoami;
+}
+
+.others {
+    grid-area: others;
+}
+
+.about {
+    grid-area: about;
+}
+
+.photo {
+    grid-area: photo;
+
+}
+
+.photo span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 10px;
+
+
+
+}
+
+.photo img {
+    border-radius: 6px;
+    width: 200px;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects img {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 2px dotted;
+    cursor: pointer;
+}
+
+.space {
+    grid-area: space;
+}
+
+.space2 {
+    grid-area: space2;
+}

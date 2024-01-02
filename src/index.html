@@ -34,13 +34,34 @@
     <!-- BARRA DE NAVEGACIÓN -->
     <div class="NavBar Hidden">
         <nav>
-            <a href="../src/index.html">INICIO</a>
-            <a href="../src/html/about.html">SOBRE NOSOTROS</a>
-            <a href="../src/html/projects.html">NUESTROS PROYECTOS</a>
-            <a href="../src/html/contact.html">CONTACTO</a>
-
+            <ul>
+                <a href="./index.html">
+                    <li>
+                        INICIO
+                    </li>
+                </a>
+    
+                <a href="./html/about.html">
+                    
+                    <li>
+                        SOBRE NOSOTROS
+                    </li>
+                </a>
+    
+                <a href="./html/projects.html">
+                    <li>
+                        NUESTROS PROYECTOS
+                    </li>
+                </a>
+    
+                <a href="./html/contact.html">
+                    <li>
+                        CONTACTO
+                    </li>
+                </a>
+            </ul>
         </nav>
-        
+
         
     </div>
 
@@ -49,20 +70,15 @@
     <!-- ENCABEZADO -->
     <header>
 
-        <!-- CABECERA -->
+        <!-- CABEZA -->
         <div class="Head">
 
             <!-- BOTÓN -->
+            <input id="switch" type="checkbox" style="background-color: black; z-index: 100000;">
             <button id="ShowNavBar">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-        </div>
-
-
-        <!-- IMÁGEN PROVISIONAL -->
-        <div class="LandscapePhotoContainer">
-            <img src="" alt="">
         </div>
 
     </header>
@@ -80,6 +96,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script src="../js/dontScroll.js"></script>
 
 
 

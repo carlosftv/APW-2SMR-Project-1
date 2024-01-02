@@ -1,0 +1,103 @@
+.title {
+    display: flex;
+
+    padding: 40px 5px 10px 50px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+
+    margin-top: 40px;
+
+}
+
+.container1 {
+    display: flex;
+
+    background-color: #333;
+
+    margin-top: 230px;
+
+    width: 100%;
+    height: 180px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    display: flex;
+    position: relative;
+
+    margin-left: 220px;
+
+
+    height: 400px;
+    width: 400px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.contact {
+    display: flex;
+    position: absolute;
+
+    background-color: rgb(64, 64, 64);
+
+    margin: 20px 660px 20px 10px;
+
+    width: 42%;
+    height: 470px;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.849);
+    border: 2px;
+    border-style: solid;
+}
+
+
+/* PIÉ DE PÁGINA */
+footer {
+    background-color: #333;
+
+    padding: 20px;
+    width: 100%;
+
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    bottom: 0px;
+
+    position: absolute;
+
+    z-index: -1;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* #GITHUB {
+    background-color: #333;
+    border: none;
+    width: 60px;
+    height: 35px;
+    margin: 10px 0;
+} */
+
+footer h4 {
+    color: white;
+    margin: 0;
+    /* Elimina el margen predeterminado del h4 */
+}
