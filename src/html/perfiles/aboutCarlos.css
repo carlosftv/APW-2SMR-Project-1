@@ -1,8 +1,5 @@
-* {
-    --acent-color: rgb(121, 58, 58);
-    --main-color: rgb(49, 49, 49);
+@import 'global.css';
 
-}
 
 
 

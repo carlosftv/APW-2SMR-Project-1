@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const body = document.body;
 
   // Establecer el tema por defecto
-  body.setAttribute('tema', 'light');
+  body.setAttribute('tema', 'dark');
 
   // Función para cambiar el tema
   function cambiarTema(tema) {

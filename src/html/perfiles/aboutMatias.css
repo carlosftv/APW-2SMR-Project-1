@@ -1,8 +1,4 @@
-* {
-    --acent-color: rgb(121, 58, 58);
-    --main-color: rgb(49, 49, 49);
-
-}
+@import 'global.css';
 
 
 
@@ -49,7 +45,7 @@
 }
 
 .Grid div:hover {
-    background-color: rgba(158, 158, 158, 0.657);
+    background-color: transparent;
     scale: 1.1;
     transition: 0.5s;
 }
