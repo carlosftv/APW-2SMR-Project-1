@@ -55,7 +55,7 @@
                 </a>
     
                 <a href="contact.html">
-                    <li>
+                    <li style="background-color: var(--ilum-color);">
                         CONTACTO
                     </li>
                 </a>
@@ -73,6 +73,7 @@
         <!-- CABEZA -->
         <div class="Head">
             <!-- BOTÓN -->
+            <input id="switch" type="checkbox" style="background-color: black; z-index: 100000;">
             <button id="ShowNavBar">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -96,18 +97,18 @@
                 <img id="img1" alt="img1" src="https://t4.ftcdn.net/jpg/03/95/04/15/360_F_395041586_h21AxqD0dNjxUw3lKFiV5t7qMBJs6wfe.jpg">
             </div>
             <div class="contact">
-                <h2>CONTACTO</h2>
-                
-                <form action="/enviar-contacto" method="post">
+                <h2>Contactanos</h2>
+                <form action="/enviar-contacto" method="post" id="contact-form">
 
                     <label for="nombre-contacto">Nombre:</label>
-                    <input type="text" id="nombre-contacto" name="nombre-contacto" required>
+                    <input id="name" type="text" id="nombre-contacto" name="nombre-contacto" required>
         
                     <label for="email-contacto">Correo Electrónico:</label>
                     <input type="email" id="email-contacto" name="email-contacto" required>
         
                     <label for="mensaje-contacto">Mensaje:</label>
-                    <input type="mensaje-contacto" id="email-contacto" name="email-contacto" required>
+                    
+                    <textarea id="messagebox" name="message" form="contact-form">Enter text here...</textarea>
             </div>
         </div>
 

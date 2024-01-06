@@ -26,8 +26,8 @@
         'ilike ilike others others'
         'ilike ilike others others'
 
-        'projects projects projects projects'
-        'projects projects projects projects'
+        'tech tech tech tech'
+        'tech tech tech tech'
     ;
     border-radius: 5px;
 
@@ -86,11 +86,11 @@
     width: 200px;
 }
 
-.projects {
-    grid-area: projects;
+.tech {
+    grid-area: tech;
 }
 
-.projects img {
+.tech img {
     display: inline-flex;
     width: 60px;
     height: 60px;

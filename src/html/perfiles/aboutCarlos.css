@@ -2,7 +2,6 @@
 
 
 
-
 .MainContainer {
     display: flex;
     justify-content: center;
@@ -27,8 +26,8 @@
         'ilike ilike others others'
         'ilike ilike others others'
 
-        'projects projects projects projects'
-        'projects projects projects projects'
+        'tech tech tech tech'
+        'tech tech tech tech'
     ;
     border-radius: 5px;
 
@@ -46,7 +45,7 @@
 }
 
 .Grid div:hover {
-    background-color: rgba(158, 158, 158, 0.657);
+    background-color: transparent;
     scale: 1.1;
     transition: 0.5s;
 }
@@ -87,11 +86,11 @@
     width: 200px;
 }
 
-.projects {
-    grid-area: projects;
+.tech {
+    grid-area: tech;
 }
 
-.projects img {
+.tech img {
     display: inline-flex;
     width: 60px;
     height: 60px;
