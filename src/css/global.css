@@ -1,51 +1,41 @@
+/* FUENTES */
+/*------------------------------------------*/
+@font-face {
+    font-family: "RubikMaps";
+    src: url("../../assets/fonts/dark-theme/Rubik_Maps/RubikMaps-Regular.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: "ZillaSlab";
+    src: url("../../assets/fonts/dark-theme/Zilla_Slab/ZillaSlab-Light.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: "amita";
+    src: url("../../assets/fonts/dark-theme/amita/Amita-Regular.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: "saint-andrewdes";
+    src: url("../../assets/fonts/dark-theme/saint-andrew-des-kiwis/SaintAndrewdesKiwis.ttf")
+        format("truetype");
+}
+/*------------------------------------------*/
+
 /* GLOBAL */
+/*------------------------------------------*/
 * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
     list-style: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
     list-style: none;
 
     color: #f4f1bb;
 }
-
-@font-face {
-    font-family: 'RubikMaps';
-    src: url('../../assets/fonts/dark-theme/Rubik_Maps/RubikMaps-Regular.ttf') format('truetype');
-} 
-@font-face {
-    font-family: 'ZillaSlab';
-    src: url('../../assets/fonts/dark-theme/Zilla_Slab/ZillaSlab-Light.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'amita';
-    src: url('../../assets/fonts/dark-theme/amita/Amita-Regular.ttf') format('truetype');
-} 
-@font-face {
-    font-family: 'saint-andrewdes';
-    src: url('../../assets/fonts/dark-theme/saint-andrew-des-kiwis/SaintAndrewdesKiwis.ttf') format('truetype');
-} 
-
-/* ESTO ES PARA VOS CARLOS */
-[tema="light"] {
-    --acent-color: #5D737E;
-    --main-color: #3F4045;
-    --background-color: #30292F;
-    --font-color: #FCFCFC;
-}
-
-/* ESTO ES PARA MI */
-[tema="dark"] {
-    --acent-color: #445c74;
-    --main-color: #662134;
-    --background-color: #10101d;
-    --font-color: #FCFCFC;
-    --linear-gradient-0:  linear-gradient(var(--main-color),var(--background-color));
-    --semi-transparent-for-elegant-titles: rgba(167, 187, 212, 0.808);
-    --ilum-color: #ff58a347 ;
-}
-
 body {
     background-color: var(--background-color);
 }
@@ -56,7 +46,6 @@ a {
     text-decoration: none;
 }
 
-
 /* I */
 i {
     font-size: 30px;
@@ -65,20 +54,54 @@ i {
 i:hover {
     color: var(--acent-color);
 }
+/*------------------------------------------*/
 
+/* CARLOS */
+/*------------------------------------------*/
+[tema="light"] {
+    --acent-color: #5d737e;
+    --main-color: #3f4045;
+    --background-color: #767376;
+    --font-color: #fcfcfc;
+    --border-color: rgb(0, 255, 0);
+    --color-for-elegant-titles: rgb(
+        0,
+        0,
+        255
+    ); /** Colores para titulos (H1) **/
+}
+/*------------------------------------------*/
 
+/* MATIAS */
+/*------------------------------------------*/
 
-/* HIDDEN GENERAL */
+[tema="dark"] {
+    --acent-color: #445c74;
+    --main-color: #662134;
+    --background-color: #10101d;
+    --font-color: #fcfcfc;
+    --linear-gradient-0: linear-gradient(
+        var(--main-color),
+        var(--background-color)
+    );
+    --semi-transparent-for-elegant-titles: rgba(167, 187, 212, 0.808);
+    --ilum-color: #ff58a347;
+}
+
+/* SPECIAL */
+/*------------------------------------------*/
 .Hidden {
     display: none;
 }
+/*------------------------------------------*/
 
 .DontScroll {
     overflow: hidden;
 }
-
+/*------------------------------------------*/
 
 /* ID DEL BOTÓN */
+/*------------------------------------------*/
 #ShowNavBar {
     position: absolute;
     right: 20px;
@@ -93,10 +116,10 @@ i:hover {
     /* arreglado */
     z-index: 10000;
 }
-
-
+/*------------------------------------------*/
 
 /* BARRA DE NAVEGACIÓN */
+/*------------------------------------------*/
 .NavBar {
     display: flexbox;
     position: absolute;
@@ -110,7 +133,6 @@ i:hover {
 }
 
 .NavBar nav {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +140,6 @@ i:hover {
 }
 
 .NavBar nav ul {
-
     align-items: center;
     justify-content: center;
     width: 20%;
@@ -135,7 +156,10 @@ i:hover {
     background-color: var(--background-color);
     align-items: center;
 }
+/*------------------------------------------*/
 
+/* TEMAS NAVBAR */
+/*------------------------------------------*/
 [tema="dark"] .NavBar nav li {
     background-color: transparent;
     border-style: none;
@@ -146,9 +170,10 @@ i:hover {
     box-shadow: 0px 5px 20px 1px var(--background-color);
     scale: 1.1;
 }
-
+/*------------------------------------------*/
 
 /* CABEZA */
+/*------------------------------------------*/
 .Head {
     display: flex;
     box-shadow: 0px 0px 10px 2px black;
@@ -157,13 +182,14 @@ i:hover {
     background-color: var(--main-color);
 }
 
+/* THEMAS HEAD */
+/*------------------------------------------*/
+
 [tema="dark"] .Head {
     background: var(--main-color);
-    
 }
-
 [tema="dark"] .NavBar::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -172,3 +198,4 @@ i:hover {
     /*background: linear-gradient(var(--ilum-color), transparent 50%, var(--background-color) 150%, transparent 90%);*/
     pointer-events: none;
 }
+/*------------------------------------------*/

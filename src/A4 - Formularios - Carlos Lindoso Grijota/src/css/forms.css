@@ -1,0 +1,37 @@
+/* CONTENIDO */
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.container1,
+.container2,
+.container3 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+
+    padding-top: 85px;
+    padding-bottom: 50px;
+
+    background-color: #d4e2c4;
+
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-left: none;
+    border-right: none;
+}
+
+.container1 h2,
+.container2 h2,
+.container3 h2 {
+    position: absolute;
+    margin-bottom: 120px;
+
+    text-decoration: underline;
+}

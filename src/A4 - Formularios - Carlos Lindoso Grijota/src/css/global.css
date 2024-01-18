@@ -1,0 +1,184 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* CUERPO */
+body {
+    background-color: #fff;
+}
+
+
+
+h4 {
+    font-weight: 400;
+}
+
+/* A */
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* I */
+i {
+    font-size: 30px;
+}
+
+i:hover {
+    color: rgb(15, 157, 34);
+}
+
+
+
+/* HIDDEN GENERAL */
+.Hidden {
+    display: none;
+}
+
+
+
+/* CABECERA */
+.Head {
+    display: flex;
+
+    align-items: center;
+    height: 100px;
+
+    background-color: #3d3d3d;
+}
+
+.title {
+    margin: 30px;
+}
+
+
+
+/* ID DEL BOTÓN */
+#ShowNavBar {
+    position: absolute;
+    right: 20px;
+    margin-right: 20px;
+
+    background-color: #33333300;
+    border: none;
+
+    width: 60px;
+    height: 35px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.NavBar {
+    display: flexbox;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    height: 21vh;
+
+    width: 100%;
+    background-color: #969696;
+    z-index: 1;
+}
+
+.NavBar nav {
+    display: flex;
+
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    height: 100%;
+
+    border-bottom-style: solid;
+    border-color: #797979;
+}
+
+.NavBar nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+    height: 40px;
+
+    background-color: #333;
+    color: white;
+
+    border-style: solid;
+    border-radius: 16px;
+    border-color: rgb(15, 157, 34);
+    border-top-width: 2px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    margin: 10px;
+
+}
+
+.Navbar:hover {
+    color: rgb(15, 157, 34);
+}
+
+#INDEX {
+    margin-top: 45px;
+}
+
+#FORMS {
+    margin-bottom: 45px;
+}
+
+
+
+/* PIÉ DE PÁGINA */
+footer {
+    background-color: #333;
+
+    padding: 15px;
+    width: 100%;
+
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    bottom: 0px;
+
+    position: absolute;
+
+    z-index: -1;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#GITHUB {
+    background-color: #333;
+    border: none;
+    width: 60px;
+    height: 35px;
+    margin: 10px 0;
+}
+
+
+#LINKEDIN {
+    background-color: #333;
+    border: none;
+    width: 20px;
+    height: 35px;
+    margin: 10px 0;
+}
+
+footer h4 {
+    color: white;
+    margin: 0;
+    /* Elimina el margen predeterminado del h4 */
+}
