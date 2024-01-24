@@ -2,16 +2,14 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-
 
 /* Cabecera */
 header {
     background-color: #333;
     padding: 50px;
-    text-shadow: #000000;  
+    text-shadow: #000000;
 }
 .title {
     color: #ffffff;
@@ -23,8 +21,6 @@ header {
     color: #32852f;
     text-decoration-line: underline;
 }
-
-
 
 /* Barra de Navegación */
 nav {
@@ -47,17 +43,13 @@ nav a {
     font-weight: 540;
 }
 
-
-
 /* Cuerpo */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     background-color: #fff;
 }
-
-
 
 /* Galería de Imágenes */
 img {
@@ -75,9 +67,9 @@ img {
 }
 .itemgallery img {
     margin-top: 5px;
-    border-width:2px;
+    border-width: 2px;
     border-style: solid;
-    border-color:rgb(20, 20, 20);
+    border-color: rgb(20, 20, 20);
     border-radius: 1.5%;
 }
 @media (max-width: 800px) {
@@ -102,7 +94,6 @@ img {
     font-size: 12px;
     margin-bottom: 30px;
 }
-
 
 /* Pie de página */
 footer {

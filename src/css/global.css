@@ -93,7 +93,6 @@ i:hover {
 .Hidden {
     display: none;
 }
-/*------------------------------------------*/
 
 .DontScroll {
     overflow: hidden;
@@ -115,46 +114,6 @@ i:hover {
 
     /* arreglado */
     z-index: 10000;
-}
-/*------------------------------------------*/
-
-/* BARRA DE NAVEGACIÓN */
-/*------------------------------------------*/
-.NavBar {
-    display: flexbox;
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    z-index: 10;
-
-    background-color: var(--main-color);
-}
-
-.NavBar nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.NavBar nav ul {
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px;
-}
-
-.NavBar nav li {
-    border: var(--acent-color) 2px solid;
-    padding: 42px 40px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: var(--background-color);
-    align-items: center;
 }
 /*------------------------------------------*/
 
