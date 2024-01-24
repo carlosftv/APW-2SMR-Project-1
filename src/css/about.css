@@ -6,6 +6,7 @@ i:hover {
     color: rgb(15, 157, 34);
 }
 
+
 /* BARRA DE NAVEGACIÓN */
 /*------------------------------------------*/
 
@@ -91,16 +92,14 @@ i:hover {
     width: 100px;
 }
 
-.imgitem {
-}
+.imgitem {}
 
 .textitem {
     display: flex;
     flex-direction: column;
 }
 
-.textitem p {
-}
+.textitem p {}
 
 .iconitem {
     display: flex;

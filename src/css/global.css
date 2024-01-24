@@ -2,24 +2,24 @@
 /*------------------------------------------*/
 @font-face {
     font-family: "RubikMaps";
-    src: url("../../assets/fonts/dark-theme/Rubik_Maps/RubikMaps-Regular.ttf")
-        format("truetype");
+    src: url("../../assets/fonts/dark-theme/Rubik_Maps/RubikMaps-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "ZillaSlab";
-    src: url("../../assets/fonts/dark-theme/Zilla_Slab/ZillaSlab-Light.ttf")
-        format("truetype");
+    src: url("../../assets/fonts/dark-theme/Zilla_Slab/ZillaSlab-Light.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "amita";
-    src: url("../../assets/fonts/dark-theme/amita/Amita-Regular.ttf")
-        format("truetype");
+    src: url("../../assets/fonts/dark-theme/amita/Amita-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "saint-andrewdes";
-    src: url("../../assets/fonts/dark-theme/saint-andrew-des-kiwis/SaintAndrewdesKiwis.ttf")
-        format("truetype");
+    src: url("../../assets/fonts/dark-theme/saint-andrew-des-kiwis/SaintAndrewdesKiwis.ttf") format("truetype");
 }
+
 /*------------------------------------------*/
 
 /* GLOBAL */
@@ -36,6 +36,7 @@
 
     color: #f4f1bb;
 }
+
 body {
     background-color: var(--background-color);
 }
@@ -54,6 +55,7 @@ i {
 i:hover {
     color: var(--acent-color);
 }
+
 /*------------------------------------------*/
 
 /* CARLOS */
@@ -64,12 +66,12 @@ i:hover {
     --background-color: #767376;
     --font-color: #fcfcfc;
     --border-color: rgb(0, 255, 0);
-    --color-for-elegant-titles: rgb(
-        0,
-        0,
-        255
-    ); /** Colores para titulos (H1) **/
+    --color-for-elegant-titles: rgb(0,
+            0,
+            255);
+    /** Colores para titulos (H1) **/
 }
+
 /*------------------------------------------*/
 
 /* MATIAS */
@@ -80,10 +82,8 @@ i:hover {
     --main-color: #662134;
     --background-color: #10101d;
     --font-color: #fcfcfc;
-    --linear-gradient-0: linear-gradient(
-        var(--main-color),
-        var(--background-color)
-    );
+    --linear-gradient-0: linear-gradient(var(--main-color),
+            var(--background-color));
     --semi-transparent-for-elegant-titles: rgba(167, 187, 212, 0.808);
     --ilum-color: #ff58a347;
 }
@@ -97,6 +97,7 @@ i:hover {
 .DontScroll {
     overflow: hidden;
 }
+
 /*------------------------------------------*/
 
 /* ID DEL BOTÓN */
@@ -115,6 +116,7 @@ i:hover {
     /* arreglado */
     z-index: 10000;
 }
+
 /*------------------------------------------*/
 
 /* TEMAS NAVBAR */
@@ -124,16 +126,18 @@ i:hover {
     border-style: none;
     transition: 1s;
 }
+
 [tema="dark"] .NavBar nav li:hover {
     background-color: var(--ilum-color);
     box-shadow: 0px 5px 20px 1px var(--background-color);
     scale: 1.1;
 }
+
 /*------------------------------------------*/
 
 /* CABEZA */
 /*------------------------------------------*/
-.Head {
+.header {
     display: flex;
     box-shadow: 0px 0px 10px 2px black;
     align-items: center;
@@ -141,12 +145,13 @@ i:hover {
     background-color: var(--main-color);
 }
 
-/* THEMAS HEAD */
+/* THEMAS header */
 /*------------------------------------------*/
 
-[tema="dark"] .Head {
+[tema="dark"] .header {
     background: var(--main-color);
 }
+
 [tema="dark"] .NavBar::before {
     content: "";
     position: absolute;
@@ -157,4 +162,5 @@ i:hover {
     /*background: linear-gradient(var(--ilum-color), transparent 50%, var(--background-color) 150%, transparent 90%);*/
     pointer-events: none;
 }
+
 /*------------------------------------------*/
