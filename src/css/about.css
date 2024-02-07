@@ -92,7 +92,10 @@ i:hover {
     width: 100px;
 }
 
-.imgitem {}
+.item img {
+    width: 325px;
+}
+
 
 .textitem {
     display: flex;
