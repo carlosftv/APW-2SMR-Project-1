@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", myFunction);
 
-function myFunction() {
+function myFunction(e) {
     button = document.getElementById("ShowNavBar");
 
     button.addEventListener("click", onClick)

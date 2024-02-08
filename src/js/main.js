@@ -1,30 +1,52 @@
+// Globals vars
+var current_theme = "";
 
+// On document load
 $(document).ready(function () {
+  main();
+});
 
+function nav_bar_toggle() {
   $("#ShowNavBar").click(function () {
     $(".NavBar").slideToggle(250);
-    console.log("test");
   });
-});
+}
 
+function main() {
+  nav_bar_toggle();
 
-document.addEventListener('DOMContentLoaded', function () {
-  const toggleBtn = document.getElementById('switch');
-  const body = document.body;
+  const default_theme = "dark";
+  var value = localStorage.getItem("theme");
 
-  // Establecer el tema por defecto
-  body.setAttribute('tema', 'dark');
-
-  // Función para cambiar el tema
-  function cambiarTema(tema) {
-    body.setAttribute('tema', tema);
+  if (value) {
+    current_theme = value;
+    if (value == "dark") {
+      $("#switch").prop("checked", true);
+    }
+  } else {
+    current_theme = default_theme;
   }
 
-  // Evento de clic para cambiar el tema
-  toggleBtn.addEventListener('click', function () {
-    const currentTheme = body.getAttribute('tema');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  // Establecer el tema
+  document.body.setAttribute('tema', current_theme);
 
-    cambiarTema(newTheme);
+  on_click_switch(current_theme);
+
+  console.log(localStorage.getItem("theme"));
+}
+
+// Evento de clic para cambiar el tema
+function on_click_switch(ct) {
+  $("#switch").click(function () {
+    if (this.checked) {
+      document.body.setAttribute('tema', "dark");
+      localStorage.setItem("theme","dark");
+      current_theme = "dark"
+      
+    } else {
+      document.body.setAttribute('tema', "light");
+      localStorage.setItem("theme","light");
+      current_theme = "light"
+    }
   });
-});
+}

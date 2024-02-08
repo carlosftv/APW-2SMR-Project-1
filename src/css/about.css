@@ -1,3 +1,7 @@
+/*
+    Elementos globales 
+*/
+
 i {
     font-size: 30px;
 }
@@ -6,60 +10,15 @@ i:hover {
     color: rgb(15, 157, 34);
 }
 
+/*
+    Clases
+*/
 
-/* BARRA DE NAVEGACIÓN */
-/*------------------------------------------*/
-
-.NavBar {
-    display: flexbox;
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    z-index: 10;
-
-    background-color: var(--main-color);
-}
-
-.NavBar nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.NavBar nav ul {
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px;
-}
-
-.NavBar nav li {
-    border: var(--acent-color) 2px solid;
-    padding: 42px 40px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: var(--background-color);
-    align-items: center;
-}
-
-/* CONTENIDO */
 .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-}
-
-/* CONTENIDO */
-.content {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -67,7 +26,6 @@ i:hover {
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
     box-sizing: border-box;
-    /* Incluye padding y border en el ancho del contenedor */
     max-width: 800px;
     height: 500px;
 
@@ -102,8 +60,6 @@ i:hover {
     flex-direction: column;
 }
 
-.textitem p {}
-
 .iconitem {
     display: flex;
 
@@ -113,6 +69,10 @@ i:hover {
     text-align: right;
     align-items: right;
 }
+
+/*
+    Elementos con ID
+*/
 
 #iconitem {
     background-color: #c4c4c400;
@@ -143,6 +103,10 @@ footer {
     align-items: center;
     text-align: center;
 }
+
+/*
+    @Media
+*/
 
 @media (max-width: 400px) {
     .content {

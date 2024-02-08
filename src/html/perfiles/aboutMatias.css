@@ -1,6 +1,8 @@
-@import 'global.css';
+@import '../../css/global.css';
 
-
+/*
+    Clases
+*/
 
 .MainContainer {
     display: flex;

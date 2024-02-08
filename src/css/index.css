@@ -1,11 +1,8 @@
 @import "global.css";
 
-/* GLOBAL */
-/*------------------------------------------*/
-
-#switch {
-    margin-left: 22px;
-}
+/* 
+    GLOBAL 
+*/
 
 h1 {
     color: var(--semi-transparent-for-elegant-titles);
@@ -14,16 +11,13 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-/*------------------------------------------*/
-
-/* BODY */
-/*------------------------------------------*/
 body {
     display: flex;
 }
 
-/* CABEZA */
-/*------------------------------------------*/
+/*
+    Cabecera
+*/
 .header {
     display: flex;
     position: absolute;
@@ -35,8 +29,9 @@ body {
     background-color: var(--main-color);
 }
 
-/* CONTENT LIST [header BAR] */
-/*------------------------------------------*/
+/*
+    CONTENT LIST [header BAR] 
+*/
 .content-list {
     display: flex;
     justify-content: center;
@@ -62,10 +57,6 @@ body {
     background-color: var(--background-color);
 }
 
-/*------------------------------------------*/
-
-/* TITULO */
-/*------------------------------------------*/
 .title {
     display: flex;
 
@@ -81,8 +72,9 @@ body {
     margin-left: 700px;
 }
 
-/* CARLOS */
-/*------------------------------------------*/
+/*
+    Light theme
+*/
 [tema="light"] .content-list {
     border-color: transparent;
 }
@@ -107,10 +99,10 @@ body {
     scale: 1.1;
 }
 
-/*------------------------------------------*/
+/* 
+    Dark theme 
+*/
 
-/* MATIAS */
-/*------------------------------------------*/
 [teme="dark"] .content-list {
     border: 2px;
     border-style: solid;
@@ -128,4 +120,10 @@ body {
     scale: 1.1;
 }
 
-/*------------------------------------------*/
+/*
+    Elementos ID
+*/
+
+#switch {
+    margin-left: 22px;
+}

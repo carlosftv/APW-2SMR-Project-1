@@ -1,5 +1,7 @@
-/* FUENTES */
-/*------------------------------------------*/
+/*
+    Fonts 
+*/
+
 @font-face {
     font-family: "RubikMaps";
     src: url("../../assets/fonts/dark-theme/Rubik_Maps/RubikMaps-Regular.ttf") format("truetype");
@@ -20,10 +22,10 @@
     src: url("../../assets/fonts/dark-theme/saint-andrew-des-kiwis/SaintAndrewdesKiwis.ttf") format("truetype");
 }
 
-/*------------------------------------------*/
+/*
+    Global
+*/
 
-/* GLOBAL */
-/*------------------------------------------*/
 * {
     box-sizing: border-box;
     padding: 0%;
@@ -41,13 +43,11 @@ body {
     background-color: var(--background-color);
 }
 
-/* A */
 a {
     color: var(--font-color);
     text-decoration: none;
 }
 
-/* I */
 i {
     font-size: 30px;
 }
@@ -56,40 +56,11 @@ i:hover {
     color: var(--acent-color);
 }
 
-/*------------------------------------------*/
 
-/* CARLOS */
-/*------------------------------------------*/
-[tema="light"] {
-    --acent-color: #5d737e;
-    --main-color: #3f4045;
-    --background-color: #767376;
-    --font-color: #fcfcfc;
-    --border-color: rgb(0, 255, 0);
-    --color-for-elegant-titles: rgb(0,
-            0,
-            255);
-    /** Colores para titulos (H1) **/
-}
+/* 
+Special 
+*/
 
-/*------------------------------------------*/
-
-/* MATIAS */
-/*------------------------------------------*/
-
-[tema="dark"] {
-    --acent-color: #445c74;
-    --main-color: #662134;
-    --background-color: #10101d;
-    --font-color: #fcfcfc;
-    --linear-gradient-0: linear-gradient(var(--main-color),
-            var(--background-color));
-    --semi-transparent-for-elegant-titles: rgba(167, 187, 212, 0.808);
-    --ilum-color: #ff58a347;
-}
-
-/* SPECIAL */
-/*------------------------------------------*/
 .Hidden {
     display: none;
 }
@@ -98,10 +69,53 @@ i:hover {
     overflow: hidden;
 }
 
-/*------------------------------------------*/
+#switch {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
 
-/* ID DEL BOTÓN */
-/*------------------------------------------*/
+/*
+    NavBar
+*/
+
+.NavBar {
+    display: flexbox;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 10;
+
+    background-color: var(--main-color);
+}
+
+.NavBar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.NavBar nav ul {
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.NavBar nav li {
+    border: var(--acent-color) 2px solid;
+    padding: 42px 40px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    align-items: center;
+}
+
 #ShowNavBar {
     position: absolute;
     right: 20px;
@@ -117,10 +131,21 @@ i:hover {
     z-index: 10000;
 }
 
-/*------------------------------------------*/
+/* 
+    Dark themes 
+*/
 
-/* TEMAS NAVBAR */
-/*------------------------------------------*/
+[tema="dark"] {
+    --acent-color: #445c74;
+    --main-color: #662134;
+    --background-color: #10101d;
+    --font-color: #fcfcfc;
+    --linear-gradient-0: linear-gradient(var(--main-color),
+            var(--background-color));
+    --semi-transparent-for-elegant-titles: rgba(167, 187, 212, 0.808);
+    --ilum-color: #ff58a347;
+}
+
 [tema="dark"] .NavBar nav li {
     background-color: transparent;
     border-style: none;
@@ -133,23 +158,10 @@ i:hover {
     scale: 1.1;
 }
 
-/*------------------------------------------*/
-
-/* CABEZA */
-/*------------------------------------------*/
-.header {
-    display: flex;
-    box-shadow: 0px 0px 10px 2px black;
-    align-items: center;
-    height: 100px;
-    background-color: var(--main-color);
-}
-
-/* THEMAS header */
-/*------------------------------------------*/
 
 [tema="dark"] .header {
     background: var(--main-color);
+
 }
 
 [tema="dark"] .NavBar::before {
@@ -159,8 +171,73 @@ i:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    /*background: linear-gradient(var(--ilum-color), transparent 50%, var(--background-color) 150%, transparent 90%);*/
     pointer-events: none;
 }
 
-/*------------------------------------------*/
+/* 
+    Light theme 
+*/
+
+[tema="light"] {
+    --acent-color: #5d737e;
+    --main-color: #3f4045;
+    --background-color: #767376;
+    --font-color: #fcfcfc;
+    --border-color: rgb(0, 255, 0);
+    --color-for-elegant-titles: rgb(0,
+            0,
+            255);
+}
+
+/* 
+    Header 
+*/
+
+.header {
+    display: flex;
+    box-shadow: 0px 0px 10px 2px black;
+    align-items: center;
+    height: 100px;
+    background-color: var(--main-color);
+}
+
+/*
+    NavBar
+*/
+
+.NavBar {
+    display: flexbox;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 10;
+
+    background-color: var(--main-color);
+}
+
+.NavBar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.NavBar nav ul {
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.NavBar nav li {
+    border: var(--acent-color) 2px solid;
+    padding: 42px 40px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+    align-items: center;
+}
