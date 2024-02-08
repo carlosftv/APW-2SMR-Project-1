@@ -42,6 +42,21 @@ i:hover {
     box-shadow: 0px 0px 10px 2px black;
 }
 
+#imgmatias {
+    display: flex;
+
+   height: 380px;
+   width: 300px;
+}
+
+#imgcarlos {
+    display: flex;
+
+   height: 400px;
+   width: 300px;
+}
+
+
 .item:hover {
     scale: 1.02;
 }
@@ -81,6 +96,8 @@ i:hover {
     width: 60px;
     height: 35px;
 }
+
+
 
 footer {
     background-color: var(--main-color);
